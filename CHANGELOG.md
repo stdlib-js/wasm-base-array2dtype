@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`33c18e1`](https://github.com/stdlib-js/stdlib/commit/33c18e1e7db1d1031acb9d3a5d085238d7f8c4ca) - **docs:** fix examples _(by Athan Reines)_
 -   [`6065197`](https://github.com/stdlib-js/stdlib/commit/6065197c84ea621bd2c0fe0028d6349275e8d044) - **fix:** update package name _(by Athan Reines)_
 -   [`e799140`](https://github.com/stdlib-js/stdlib/commit/e799140f66eee9b9bd4508c7215f49d2e58c0e78) - **feat:** add `wasm/base/array2dtype` _(by Athan Reines)_
 
