@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-dtype": "^0.3.0",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/wasm-base-dtype2wasm": "github:stdlib-js/wasm-base-dtype2wasm#main"
   },
   "devDependencies": {
