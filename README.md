@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-array2dtype/tags). For example,
+
+```javascript
 import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.0-esm/index.mjs';
 ```
 
@@ -102,7 +107,7 @@ var dt = array2dtype( [] );
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@esm/index.mjs';
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.0-esm/index.mjs';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
 
 // Get a list of supported array data types:
 var dt = dtypes();
