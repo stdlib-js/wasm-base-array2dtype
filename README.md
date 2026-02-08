@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/wasm-base-array2dtype
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-array2dtype/tags). For example,
-
-```javascript
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.0-esm/index.mjs';
+var array2dtype = require( '@stdlib/wasm-base-array2dtype' );
 ```
 
 #### array2dtype( array )
@@ -65,7 +78,7 @@ import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2d
 Returns the WebAssembly data type for a provided `array`.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 var arr = new Float64Array( 10 );
 
 var dt = array2dtype( arr );
@@ -99,15 +112,10 @@ var dt = array2dtype( [] );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
-import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@esm/index.mjs';
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var empty = require( '@stdlib/array-empty' );
+var array2dtype = require( '@stdlib/wasm-base-array2dtype' );
 
 // Get a list of supported array data types:
 var dt = dtypes();
@@ -119,10 +127,6 @@ for ( i = 0; i < dt.length; i++ ) {
     v = array2dtype( empty( 10, dt[ i ] ) );
     console.log( '%s => %s', dt[ i ], v );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -154,7 +158,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -184,8 +188,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/wasm-base-array2dtype.svg
 [npm-url]: https://npmjs.org/package/@stdlib/wasm-base-array2dtype
 
-[test-image]: https://github.com/stdlib-js/wasm-base-array2dtype/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/wasm-base-array2dtype/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/wasm-base-array2dtype/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/wasm-base-array2dtype/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/wasm-base-array2dtype/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/wasm-base-array2dtype?branch=main
@@ -217,7 +221,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/wasm-base-array2dtype/main/LICENSE
 
-[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes/tree/esm
+[@stdlib/array/dtypes]: https://github.com/stdlib-js/array-dtypes
 
 </section>
 
