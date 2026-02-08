@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/wasm-base-array2dtype/tags). For example,
+
+```javascript
 import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-deno/mod.js';
 ```
 
@@ -97,7 +102,7 @@ var dt = array2dtype( [] );
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@deno/mod.js';
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-deno/mod.js';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@deno/mod.js';
 
 // Get a list of supported array data types:
 var dt = dtypes();
