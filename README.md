@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-esm/index.mjs';
 ```
 
 #### array2dtype( array )
@@ -102,7 +102,7 @@ var dt = array2dtype( [] );
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@esm/index.mjs';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@esm/index.mjs';
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@esm/index.mjs';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-esm/index.mjs';
 
 // Get a list of supported array data types:
 var dt = dtypes();
