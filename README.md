@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-array2dtype = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@umd/browser.js' )
+array2dtype = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var array2dtype = require( 'path/to/vendor/umd/wasm-base-array2dtype/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -124,7 +124,7 @@ var dt = array2dtype( [] );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
