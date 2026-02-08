@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@deno/mod.js';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-deno/mod.js';
 ```
 
 #### array2dtype( array )
@@ -97,7 +97,7 @@ var dt = array2dtype( [] );
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
 import empty from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-empty@deno/mod.js';
-import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@deno/mod.js';
+import array2dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-base-array2dtype@v0.1.1-deno/mod.js';
 
 // Get a list of supported array data types:
 var dt = dtypes();
